@@ -1,0 +1,30 @@
+2019-06-17 16:26:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ALKUPVM" not found; SQL statement:
+CREATE INDEX idx_varaus_alkupvm ON Varaus (alkupvm); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.CreateIndex.update(CreateIndex.java:106)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:65)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:18)
+2019-06-17 16:29:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ALKUPVM" not found; SQL statement:
+CREATE INDEX idx_varaus_alkupvm ON Varaus (alkupvm); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:74)
+	at org.h2.command.ddl.CreateIndex.update(CreateIndex.java:106)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:199)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:153)
+	at varausjarjestelma.VarausjarjestelmaSovellus.alustaTietokanta(VarausjarjestelmaSovellus.java:65)
+	at varausjarjestelma.VarausjarjestelmaSovellus.main(VarausjarjestelmaSovellus.java:18)
